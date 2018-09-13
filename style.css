@@ -1,0 +1,170 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+/* Started Kit for Developer */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+* {
+box-sizing: border-box;
+}
+
+button, input {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* code */
+
+@media screen and (min-width: 320px){
+    .blocks__test {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    .btn-replay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #65c178;
+        transition: .1s ease-out;
+        cursor: pointer;
+    }
+
+    .btn-replay p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .desktop-reload {
+        display: none;
+    }
+
+    .mobile-reload {
+        display: block;
+        width: 23px;
+        height: 23px;
+        transition: 1.2s ease-out;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .blocks__test {
+        padding: 50px;
+    }
+
+    .desktop-reload {
+        display: block;
+    }
+
+    .mobile-reload {
+        display: none;
+    }
+
+    .btn-replay {
+        top: unset;
+        bottom: 25px;
+        right: 25px;
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .btn-replay:hover {
+        background-color: #59a969;
+    }
+}
+
+
+.block {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 420px;
+    min-height: 200px;
+}
+
+.block__content {
+    width: 100%;
+    height: auto;
+}
+
+.blocks__content-text {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b2d38;
+    padding: 15px;
+}
+
+
+.btn-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b2bac2;
+    transition: .2s ease-out;
+}
+
+.btn-link:hover {
+    color: #65c178;
+    text-decoration: underline;
+}
+
+
+.btn-click {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b2bac2;
+    min-height: 40px;
+    margin: 10px 0 12px;
+    padding: 0 40px;
+    cursor: pointer;
+    border: 3px solid #b2bac2;
+    border-radius: 4px;
+    transition: .2s ease-out;
+}
+
+
+.btn-click:hover {
+    border-color: #65c178;
+    color: #65c178;
+}
+
+.btn-click:active {
+    border-color: #337BC5;
+    color: #337BC5;
+}
